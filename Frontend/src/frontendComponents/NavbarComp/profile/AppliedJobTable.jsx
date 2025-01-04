@@ -10,7 +10,7 @@ const AppliedJobTable = () => {
 
   
   return (
-    <div className=" w-[107%] overflow-x-hidden ">
+    <div className="  overflow-x-hidden ">
       <h1 className="font-bold text-lg my-5">Applied Jobs</h1>
       <Table>
         <TableCaption>A list of your applied Jobs</TableCaption>
@@ -30,9 +30,9 @@ const AppliedJobTable = () => {
           ) : (
             allAppliedJob?.map((item) => (
               <TableRow key={item._id}>
-                <TableCell>{item?.createdAt.split("T")[0]}</TableCell>
-                <TableCell>{item.job.title}</TableCell>
-                <TableCell> {item?.job.company?.name}</TableCell>
+                <TableCell>{item?.createdAt?.split("T")[0]}</TableCell>
+                <TableCell>{item?.job?.title}</TableCell>
+                <TableCell> {item?.job?.company?.name}</TableCell>
                 <TableCell className="text-right  ">
                   <Badge
                     className={`px-4 py-2  ${

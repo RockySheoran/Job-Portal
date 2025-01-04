@@ -16,7 +16,7 @@ const Job = ({job}) => {
     return Math.floor(timeDifferent/(1000*24*60*60));
   }
   return (
-    <div className="p-5  rounded-md shadow-md bg-gray-100 border border-gray-100">
+    <div className=" px-3 py-2  rounded-md shadow-md bg-gray-100 border border-gray-100">
       <div className="flex items-center justify-between">
         <p className="text-gray-500">
           {handleJobTime(job?.createdAt) == 0
@@ -57,7 +57,7 @@ const Job = ({job}) => {
           {job?.salary} LPA
         </Badge>
       </div>
-      <div className="gap-4 flex mt-3">
+      <div className="gap-4 flex justify-between mt-3">
         <Button
           onClick={() => navigate(`description/${job._id}`)}
           variant="outline"

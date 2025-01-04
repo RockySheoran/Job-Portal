@@ -17,7 +17,7 @@ const Home = () => {
     }
   });
   return (
-    <div className="mx-auto relative w-full left-6">
+    <div className=" ">
       <HeroSections />
 
       <CategoryCarousel />

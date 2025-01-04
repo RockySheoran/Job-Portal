@@ -12,7 +12,7 @@ const Browse = () => {
     dispatch(setSearchQueryText(""));
   })
   return (
-    <div className="max-w-7xl w-[107%] sm:mx-8 md:mx-auto mx-4">
+    <div className="max-w-7xl sm:mx-8 md:mx-auto mx-4">
       <h1 className="font-bold mb-7 mt-3 text-3xl md:ml-16">
         Search Result <span className="text-red-600 ">( {allJob.length} )</span>
       </h1>

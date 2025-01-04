@@ -78,7 +78,7 @@ useEffect(()=>{
  
 
   return (
-    <div className="max-w-xl lg:mx-auto my-10 w-[107%] mx-3 sm:mx-10 md:mx-20">
+    <div className="max-w-xl lg:mx-auto my-10  mx-3 sm:mx-10 md:mx-20">
       <div className="">
         <div className="flex items-center justify-between md:p-8 px-3 my-3">
           <Button

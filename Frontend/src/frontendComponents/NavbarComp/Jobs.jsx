@@ -29,9 +29,9 @@ const Jobs = () => {
 
 
   return (
-    <div className="max-w-7xl w-[113%] mx-auto mt-20 ml-1">
+    <div className="max-w-7xl  mx-auto mt-20 ml-1">
       <div className="flex gap-5">
-        <div className="filter w-[20%]">
+        <div className="filter sm:w-[20%] w-[15%]">
           <FilterCard></FilterCard>
         </div>
 

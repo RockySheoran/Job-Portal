@@ -25,7 +25,7 @@ const Profile = () => {
   const [open , setOpen] = useState(false)
   return (
     <div>
-      <div className="max-w-4xl md:mx-auto w-[107%] bg-white border rounded-xl hover:bg-slate-50 border-gray-200 p-2 ml-2  md:p-8 my-5">
+      <div className="max-w-4xl md:mx-auto  bg-white border rounded-xl hover:bg-slate-50 border-gray-200 p-2 ml-2  md:p-8 my-5">
         <div className="flex  items-center justify-between">
           <div className="flex gap-4 items-center ">
             <Avatar className="md:h-24 md:w-24 h-16 w-16">
@@ -40,8 +40,8 @@ const Profile = () => {
           <Button
             onClick={() => setOpen(true)}
            
-            className="text-right  ">
-            <Pen className="" />
+            className="text-right bg-white  ">
+            <Pen className=" text-black" />
           </Button>
         </div>
         <div className="ml-4 my-5">

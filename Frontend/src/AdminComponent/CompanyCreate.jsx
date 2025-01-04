@@ -38,7 +38,7 @@ const CompanyCreate = () => {
     }
 
   return (
-    <div className="">
+    <div className=" mx-5">
       <div className="max-w-4xl mx-auto ">
         <div className="my-10">
           <h1 className="font-bold text-2xl">Your Company name</h1>
@@ -49,7 +49,7 @@ const CompanyCreate = () => {
         </div>
         <Label>Company Name</Label>
         <Input type="text" value ={companyName.company} name="company" onChange={(e)=>setCompanyName(e.target.value)} className="my-2" placeholder="jobHunt ,Microsoft" />
-        <div className="flex items-center gap-2 my-10">
+        <div className="flex  items-center gap-2 my-10">
           <Button
             onClick={() => navigate("/admin/companies")}
             variant="outline">

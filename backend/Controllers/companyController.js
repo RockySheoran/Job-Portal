@@ -106,3 +106,34 @@ export const updateCompany = async (req, res) => {
     console.log(error);
   }
 };
+
+export const getCompDeleteByAdminId = async (req, res) => {
+  try {
+    const adminId = req.id; // Assuming req.id contains the admin ID
+    // console.log("Admin ID:", adminId);
+
+    const { ComId } = req.body; // Extract jobId from the request body
+    // console.log("Job ID to delete:", ComId);
+
+    // Find and delete the job by ID
+    const company = await companyModel.findByIdAndDelete(ComId);
+
+    if (!company) {
+      return res.status(404).json({
+        message: "Job not found",
+        success: false,
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: "company deleted successfully",
+    });
+  } catch (error) {
+    console.error("Error deleting job:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Internal server error",
+    });
+  }
+};

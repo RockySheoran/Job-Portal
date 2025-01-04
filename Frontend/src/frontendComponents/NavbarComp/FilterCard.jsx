@@ -35,25 +35,29 @@ const FilterCard = () => {
     dispatch(setSearchQueryText(selectedValue));
   }, [selectedValue]);
   return (
-    <div className="w-full bg-white px-1 md:mx-8  rounded-md">
-      <h1 className="font-bold text-lg">Filter Job</h1>
+    <div className="w-full bg-white px-.05 md:mx-6  rounded-md">
+      <h1 className="font-bold sm:text-lg text-sm text-center text-red-400 ">Filter Job</h1>
       <hr className="mt-3" />
       <RadioGroup onValueChange={handleChange}>
         {filterData.map((data, index) => (
           <div key={index} className="">
-            <h1 className="font-bold text-lg">{data.filterType}</h1>
+            <h1 className="font-bold text-[13px] sm:text-[15px] md:text-[17px]">
+              {data.filterType}
+            </h1>
             {data.array.map((item, inx) => {
               const itemId = `r${inx}-${index}`;
               return (
                 <motion.div
                   initial={{ opacity: 0, x: 100 }}
                   key={inx}
-                  animate={{opacity:1,x:0}}
-                  exit={{opacity:0,x:-100}}
-                  transition={{duration:0.3}}
-                  className="flex my-1 items-center space-x-2 ">
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex sm:my-1 my-0.5  items-center sm:space-x-2 space-x-1 ">
                   <RadioGroupItem value={item} id={itemId} />
-                  <Label htmlFor={itemId} className="my-1">
+                  <Label
+                    htmlFor={itemId}
+                    className="my-1 text-[10px] sm:text-[15px] md:text-[17px]">
                     {item}
                   </Label>
                 </motion.div>

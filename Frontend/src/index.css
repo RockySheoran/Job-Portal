@@ -3,11 +3,25 @@
 @tailwind utilities;
 
 /* ... */
-html {
-  overflow-x: hidden !important;
-  box-sizing: border-box;
-  padding: 0;
+
+
+/* Ensure the body and html elements don't overflow */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   margin: 0;
+  padding: 0;
+}
+
+/* Make sure all child elements fit within their parent */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure the navbar width is responsive */
+nav {
+  width: 100%; /* or max-width: 100%; */
+  overflow-x: hidden; /* Prevent content from overflowing horizontally */
 }
 
 @layer base {

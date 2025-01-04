@@ -30,7 +30,7 @@ const ApplicantDetails = () => {
 
     },[])
   return (
-    <div className="max-w-7xl  xl:mx-auto w-[107%] mx-2 sm:mx-10  my-10">
+    <div className="max-w-7xl  xl:mx-auto  mx-2 sm:mx-10  my-10">
       <h1 className="font-bold text-xl my-5 ml-3">
         Applicant{" "}
         <span className="text-red-500">

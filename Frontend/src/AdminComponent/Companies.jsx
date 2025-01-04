@@ -17,7 +17,7 @@ const Companies = () => {
 
     },[input])
   return (
-    <div className="max-w-6xl xl:mx-auto w-[107%] mx-2 sm:mx-10  my-10">
+    <div className="max-w-6xl xl:mx-auto  mx-2 sm:mx-10  my-10">
       <div
         className=" justify-between flex items-center my-5
       ">

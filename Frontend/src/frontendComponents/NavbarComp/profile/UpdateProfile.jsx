@@ -8,6 +8,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
+import { GiSplitCross } from "react-icons/gi";
 import { Label } from "@/components/ui/label";
 import { setUser } from "@/Redux/authSlice";
 import { USER_API_END_POINT } from "@/utils/apiHead";
@@ -78,13 +79,23 @@ const UpdateProfile = ({ open, setOpen }) => {
     }
   };
   return (
-    <div className="w-full bg-black z-[9999] mt-20 rounded-lg">
-      <Dialog open={open} >
+    <div className="w-full  bg-black z-[9999] mt-20 rounded-lg">
+      <Dialog open={open}>
         <DialogContent
-          className="sm:max-w-[425px] z-[9999999] rounded-xl text-black bg-gray-100 "
+          className="sm:max-w-[425px] max-w-[295px] z-[9999999] rounded-xl text-black bg-gray-100"
           onInteractOutside={() => setOpen(false)}>
           <DialogHeader>
-            <DialogTitle>Update profile</DialogTitle>
+            <div className="flex justify-between">
+              <DialogTitle>Update profile</DialogTitle>
+              {/* Close Button */}
+              <button
+                type="button"
+                className="text-black relative bottom-2.5 left-6 text-xl w-10 flex items-end  "
+                onClick={() => setOpen(false)}>
+                <GiSplitCross />
+              </button>
+            </div>
+
             <DialogDescription>
               Update your profile details, including your name, email, phone
               number, bio, and skills.
@@ -168,12 +179,14 @@ const UpdateProfile = ({ open, setOpen }) => {
             </div>
 
             {loading ? (
-              <Button className=" mr-2 my-4 w-full">
+              <Button className="mr-2 my-4 w-full">
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" /> please wait
               </Button>
             ) : (
               <DialogFooter>
-                <Button className=" mr-2 my-4 w-full bg-gray-700 hover:bg-gray-500 text-white" type="submit">
+                <Button
+                  className="mr-2 my-4 w-full bg-gray-700 hover:bg-gray-500 text-white"
+                  type="submit">
                   Save changes
                 </Button>
               </DialogFooter>

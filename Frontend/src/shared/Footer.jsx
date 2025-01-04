@@ -3,7 +3,7 @@
 
   const Footer = () => {
     return (
-      <div className="bg-gray-800  w-[120%]   ">
+      <div className="bg-gray-800     ">
         <footer className=" text-white py-6 mt-11 max-w-7xl mx-auto">
           <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             {/* Logo and Description */}
