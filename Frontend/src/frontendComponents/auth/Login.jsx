@@ -28,8 +28,9 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      // console.log(input)
+      console.log(input)
       dispatch(setLoading(true))
+      console.log(`${USER_API_END_POINT}/login`);
 
       const res = await axios.post(`${USER_API_END_POINT}/login`, input, {
         headers: {
