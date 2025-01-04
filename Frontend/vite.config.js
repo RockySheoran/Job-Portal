@@ -12,4 +12,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'], // Separate vendor libraries
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000, // Increase warning limit
+  },
 });
