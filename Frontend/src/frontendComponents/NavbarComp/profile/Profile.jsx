@@ -59,7 +59,7 @@ const Profile = () => {
           <div className="flex items-center gap-2">
             {user?.profile?.skills?.length > 0 ? (
               user?.profile?.skills?.map((item, index) => (
-                <Badge key={index} className="bg-slate-200">{item}</Badge>
+                <Badge key={index} className="">{item}</Badge>
               ))
             ) : (
               <span>NA</span>
