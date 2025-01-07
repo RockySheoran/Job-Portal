@@ -126,7 +126,7 @@ const Login = () => {
         {
           loading ? <Button className=" mr-2 my-4 w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin" /> please wait</Button>
             :
-            <Button type="submit" className="w-full my-4 bg-gray-500 hover:bg-gray-300">
+            <Button type="submit" className="w-full my-4 bg-gray-700 hover:bg-gray-300">
               Login
             </Button>
         }

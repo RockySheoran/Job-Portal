@@ -5,7 +5,7 @@ import Footer from './shared/Footer';
 
 const AppLayout = () => {
   return (
-    <div>
+    <div >
       <Navbar />
       <Outlet />
       <Footer />

@@ -3,7 +3,7 @@
 
   const Footer = () => {
     return (
-      <div className="bg-gray-800     ">
+      <div className={`bg-gray-800  `}>
         <footer className=" text-white py-6 mt-11 max-w-7xl mx-auto">
           <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             {/* Logo and Description */}
@@ -15,7 +15,7 @@
             </div>
 
             {/* Links */}
-            <div className="flex flex-col md:flex-row gap-4 text-center">
+            <div className="flex flex-col md:flex-row sm:gap-4 gap-1 text-center">
               <a href="/about" className="hover:text-blue-500">
                 About Us
               </a>
@@ -31,7 +31,7 @@
             </div>
 
             {/* Social Media Links */}
-            <div className="flex gap-4 mt-4 md:mt-0">
+            <div className="flex gap-4  mt-4 md:mt-0">
               <a
                 href="https://facebook.com"
                 className="hover:text-blue-500"
@@ -46,7 +46,7 @@
               </a>
               <a
                 href="https://linkedin.com"
-                className="hover:text-blue-500"
+                className="hover:text-blue-500 "
                 aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in"></i>
               </a>

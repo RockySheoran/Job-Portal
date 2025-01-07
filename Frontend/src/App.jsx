@@ -48,6 +48,7 @@ function App() {
           element: <Profile />,
         },
         { path: "jobs/description/:id", element: <JobDescription /> },
+        { path: "browse/description/:id", element: <JobDescription /> },
 
         // admin
         {

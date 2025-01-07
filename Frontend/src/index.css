@@ -4,13 +4,12 @@
 
 /* ... */
 
-
 /* Ensure the body and html elements don't overflow */
-html, body {
+
+body {
   width: 100%;
   overflow-x: hidden; /* Prevent horizontal scrolling */
   margin: 0;
-  padding: 0;
 }
 
 /* Make sure all child elements fit within their parent */
