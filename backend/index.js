@@ -21,16 +21,16 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-// const corsOptions = {
-//   origin: "https://job-portal-fontend.onrender.com",
-//   credentials: true,
-// };
-// app.use(cors(corsOptions));
-const corsOptions1 = {
-  origin: "http://localhost:5173",
+const corsOptions = {
+  origin: "https://job-portal-fontend.onrender.com",
   credentials: true,
 };
-app.use(cors(corsOptions1));
+app.use(cors(corsOptions));
+// const corsOptions1 = {
+//   origin: "http://localhost:5173",
+//   credentials: true,
+// };
+// app.use(cors(corsOptions1));
 
 
 //api
