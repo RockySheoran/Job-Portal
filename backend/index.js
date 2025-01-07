@@ -32,6 +32,7 @@ app.use(cors(corsOptions));
 // };
 // app.use(cors(corsOptions1));
 
+
 //api
 
 app.use("/api/v1/user", userRouter);
