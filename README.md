@@ -1,4 +1,4 @@
-# Food Ordering(FoodDel) Web App (MERN Stack)
+# JobPortal Web App (MERN Stack)
   - [User-URL] https://job-portal-fontend.onrender.com
  
 ## Table of Contents
