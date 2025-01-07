@@ -5,12 +5,9 @@ import { Loader2 } from "lucide-react";
 
 const LatestJob = () => {
   const { allJob } = useSelector((store) => store.jobs);
-  const [loading,setLoading] = useState(false);
+
   
-  useState(()=>{
-    setLoading(allJob.length <= 0 ? true : false);
-  },[allJob,loading])
-  // console.log(loading)
+
 
   return (
     <div className="max-w-7xl mx-auto my-20 ">
@@ -33,12 +30,7 @@ const LatestJob = () => {
             .slice(0, 6)
             .map((job) => <LatestJobCard key={job._id} job={job} />)
         )}
-        {loading && (
-          <div className="h-30">
-            {" "}
-            <Loader2 /> <h1>fvf</h1>{" "}
-          </div>
-        )}
+       
       </div>
     </div>
   );
