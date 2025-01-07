@@ -26,11 +26,11 @@ const corsOptions = {
   credentials: true,
 };
 app.use(cors(corsOptions));
-// const corsOptions1 = {
-//   origin: "http://localhost:5173",
-//   credentials: true,
-// };
-// app.use(cors(corsOptions1));
+const corsOptions1 = {
+  origin: "http://localhost:5173",
+  credentials: true,
+};
+app.use(cors(corsOptions1));
 
 
 //api

@@ -1,5 +1,6 @@
 
    import React from "react";
+import { Link } from "react-router-dom";
 
   const Footer = () => {
     return (
@@ -16,16 +17,16 @@
 
             {/* Links */}
             <div className="flex flex-col md:flex-row sm:gap-4 gap-1 text-center">
-              <a href="/about" className="hover:text-blue-500">
+              <Link href="/" className="hover:text-blue-500">
                 About Us
-              </a>
-              <a href="/jobs" className="hover:text-blue-500">
+              </Link>
+              <Link href="/jobs" className="hover:text-blue-500">
                 Find Jobs
-              </a>
-              <a href="/contact" className="hover:text-blue-500">
+              </Link>
+              <a  className="hover:text-blue-500">
                 Contact Us
               </a>
-              <a href="/privacy" className="hover:text-blue-500">
+              <a  className="hover:text-blue-500">
                 Privacy Policy
               </a>
             </div>

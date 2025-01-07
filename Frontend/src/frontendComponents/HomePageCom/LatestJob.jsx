@@ -22,19 +22,23 @@ const LatestJob = () => {
           window.innerWidth > 375 && "mx-6"
         }  `}>
         {allJob.length <= 0 ? (
-         
-          <span className="text-red-500">NO JOB AVAILABLE</span>
-          
-          
-          
+          <div className="flex justify-center w-full gap-3 content-center  ">
+            <span className="text-red-500  text-center   ">
+              <h1 className="animate-spin h-12 w-12 border-2 border-red-700  border-t-0  rounded-full "> </h1>
+            </span>
+            <span className="text-black h-20 text-center  ">Loading...</span>
+          </div>
         ) : (
           allJob
             .slice(0, 6)
             .map((job) => <LatestJobCard key={job._id} job={job} />)
         )}
-        {
-          loading && <div className="h-30"> <Loader2/> <h1>fvf</h1> </div>
-        }
+        {loading && (
+          <div className="h-30">
+            {" "}
+            <Loader2 /> <h1>fvf</h1>{" "}
+          </div>
+        )}
       </div>
     </div>
   );
