@@ -17,6 +17,9 @@ const jobSlice = createSlice({
         setAllJob: (state, action) => {
             state.allJob = action.payload;
         },
+        setLoading: (state, action) => {
+            state.loading = action.payload;
+        },
         setSingleJob: (state, action) => {
             state.singleJob = action.payload;
         },
@@ -36,6 +39,6 @@ const jobSlice = createSlice({
     }
 })
 
-export const { setAllJob, setSingleJob, setAllAdminJob, setSearchJobByText, setAllAppliedJob ,setSearchQueryText} = jobSlice.actions;
+export const { setAllJob, setSingleJob, setLoading, setAllAdminJob, setSearchJobByText, setAllAppliedJob ,setSearchQueryText} = jobSlice.actions;
 
 export default jobSlice.reducer;
