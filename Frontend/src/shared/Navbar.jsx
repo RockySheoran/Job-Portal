@@ -111,7 +111,7 @@ const Navbar = () => {
                   <Button
                     variant="out"
                     className="bg-[#6A38C2] hover:bg-[#5b30a6]">
-                    SingUp
+                    SignUp 
                   </Button>
                 </Link>
                 <div className=" md:hidden focus:outline-none flex gap-2">
