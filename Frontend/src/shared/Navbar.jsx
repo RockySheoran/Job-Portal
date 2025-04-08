@@ -153,7 +153,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/signup" className="block md:hidden">
                       <button className=" flex gap-2 p-0  items-center ">
-                        <LogIn className="mt-1" /> <span>SingUp</span>{" "}
+                        <LogIn className="mt-1" /> <span>Sign Up</span>{" "}
                       </button>
                     </Link>
                   </div>
